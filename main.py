@@ -42,3 +42,8 @@ raw_materials_inventory.add_material(RawMaterial("Soybeans", "Northern", "Tamale
 raw_materials_inventory.add_material(RawMaterial("Groundnut", "Northern", "Yendi", 400, "Legumes"))
 raw_materials_inventory.add_material(RawMaterial("Cassava", "Northern", "Bimbilla", 200, "Starchy Crops"))
 raw_materials_inventory.add_material(RawMaterial("Yam", "Northern", "Salaga", 600, "Starchy Crops"))
+# Savannah Region
+raw_materials_inventory.add_material(RawMaterial("Maize", "Savannah", "Damongo", 700, "Cereals"))
+raw_materials_inventory.add_material(RawMaterial("Sorghum", "Savannah", "Sawla", 500, "Cereals"))
+raw_materials_inventory.add_material(RawMaterial("Rice", "Savannah", "Daboya", 300, "Cereals"))
+
