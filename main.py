@@ -55,3 +55,11 @@ raw_materials_inventory.add_material(RawMaterial("Cashew", "North East", "Gambag
 # Upper East Region
 raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper East", "Bolgatanga", 800, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper East", "Navrongo", 600, "Legumes"))
+
+# Upper West Region
+raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper West", "Wa", 700, "Cereals"))
+raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper West", "Nadowli", 500, "Legumes"))
+
+# Oti Region
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Oti", "Jasikan", 1000, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Maize", "Oti", "Kadjebi", 800, "Cereals"))
