@@ -47,8 +47,6 @@ raw_materials_inventory.add_material(RawMaterial("Maize", "Savannah", "Damongo",
 raw_materials_inventory.add_material(RawMaterial("Sorghum", "Savannah", "Sawla", 500, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Rice", "Savannah", "Daboya", 300, "Cereals"))
 <<<<<< HEAD
-
-ss
 =======
 #  North East Region
 raw_materials_inventory.add_material(RawMaterial("Vegetables", "North East", "Nalerigu", 200, "Vegetables"))
@@ -63,7 +61,7 @@ raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper East", "Navro
 raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper West", "Wa", 700, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper West", "Nadowli", 500, "Legumes"))
 
-# Oti Region
+Oti Region
 raw_materials_inventory.add_material(RawMaterial("Cocoa", "Oti", "Jasikan", 1000, "Crops"))
 raw_materials_inventory.add_material(RawMaterial("Maize", "Oti", "Kadjebi", 800, "Cereals"))
 
