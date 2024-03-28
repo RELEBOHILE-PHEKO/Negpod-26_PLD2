@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 #classes go first for hierarchial reasons.
 class RawMaterial:
    def __init__(self, name, region, town, quantity, crop_type):
