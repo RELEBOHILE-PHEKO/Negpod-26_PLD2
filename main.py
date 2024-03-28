@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+#classes go first for hierarchial reasons.
 class RawMaterial:
    def __init__(self, name, region, town, quantity, crop_type):
      self.name = name
@@ -34,7 +35,7 @@ class RawMaterialInventory:
 # Sample data for raw materials inventory
 raw_materials_inventory = RawMaterialInventory()
 
-# Adding sample raw materials based on the provided information
+# Adding sample raw materials based on the provided information.
 
 # Northern-most Region
 raw_materials_inventory.add_material(RawMaterial("Tomatoes", "Northern", "Tamale", 500, "Vegetables"))
@@ -71,5 +72,5 @@ def display_all_raw_materials():
     for material in raw_materials_inventory.materials:
         print(f"Region: {material.region}, Town: {material.town}, Crop Type: {material.crop_type}, Quantity: {material.quantity}")
 
-# Sample usage
+# Sample usage case.
 display_all_raw_materials()
