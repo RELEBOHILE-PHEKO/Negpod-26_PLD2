@@ -1,2 +1,4 @@
 # Negpod-26_PLD2
-i
+This application is the beta of a inventory management system for farmers, -
+small enterprise and susbistence farmers...
+
