@@ -46,7 +46,7 @@ raw_materials_inventory.add_material(RawMaterial("Yam", "Northern", "Salaga", 60
 raw_materials_inventory.add_material(RawMaterial("Maize", "Savannah", "Damongo", 700, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Sorghum", "Savannah", "Sawla", 500, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Rice", "Savannah", "Daboya", 300, "Cereals"))
-<<<<<<< HEAD
+<<<<<< HEAD
 ss
 =======
 
