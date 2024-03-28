@@ -47,7 +47,7 @@ raw_materials_inventory.add_material(RawMaterial("Maize", "Savannah", "Damongo",
 raw_materials_inventory.add_material(RawMaterial("Sorghum", "Savannah", "Sawla", 500, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Rice", "Savannah", "Daboya", 300, "Cereals"))
 
-# North East Region
+#  North East Region
 raw_materials_inventory.add_material(RawMaterial("Vegetables", "North East", "Nalerigu", 200, "Vegetables"))
 raw_materials_inventory.add_material(RawMaterial("Sesame", "North East", "Walewale", 150, "Crops"))
 raw_materials_inventory.add_material(RawMaterial("Cashew", "North East", "Gambaga", 300, "Fruits"))
