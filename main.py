@@ -98,16 +98,11 @@ raw_materials_inventory.add_material(RawMaterial("Oil Palm", "Volta", "Keta", 20
 raw_materials_inventory.add_material(RawMaterial("Plantains", "Western North", "Sefwi Wiawso", 300, "Fruits"))
 raw_materials_inventory.add_material(RawMaterial("Cocoa", "Western North", "Sefwi Debiso", 200, "crop"))
 
-# Function to display raw materials based on crop name
-def display_raw_materials_by_crop():
-    crop_name = input("Enter the name of the crop raw material: ").strip().lower()
-    found_materials = raw_materials_inventory.search_materials_by_crop(crop_name)
-    if found_materials:
-        print(f"Raw Materials for {crop_name.capitalize()}:")
-        for material in found_materials:
-            print(f"Region: {material.region}, Town: {material.town}, Crop Type: {material.crop_type}, Quantity: {material.quantity}")
-    else:
-        print(f"No raw materials found for {crop_name.capitalize()}.")
+# Sample function to display all raw materials
+def display_all_raw_materials():
+    print("Raw Materials Inventory:")
+    for material in raw_materials_inventory.materials:
+        print(f"Region: {material.region}, Town: {material.town}, Crop Type: {material.crop_type}, Quantity: {material.quantity}")
 
 # Sample usage
-display_raw_materials_by_crop()
+display_all_raw_materials()
