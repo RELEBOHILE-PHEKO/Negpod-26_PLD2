@@ -1,0 +1,40 @@
+#!/usr/bin/python3
+
+class RawMaterial:
+    def __init__(self, name, region, town, quantity, crop_type):
+        self.name = name
+        self.region = region
+        self.town = town
+        self.quantity = quantity
+        self.crop_type = crop_type
+
+class RawMaterialInventory:
+    def __init__(self):
+        self.materials = []
+
+    def add_material(self, material):
+        self.materials.append(material)
+
+    def search_materials_by_crop(self, crop_name):
+        found_materials = [material for material in self.materials if material.name.lower() == crop_name.lower()]
+        return found_materials
+
+# Sample data for raw materials inventory
+raw_materials_inventory = RawMaterialInventory()
+
+# Adding sample raw materials based on the provided information
+# (Your existing data goes here...)
+
+# Function to display raw materials based on crop name
+def display_raw_materials_by_crop():
+    crop_name = input("Enter the name of the crop raw material: ").strip().lower()
+    found_materials = raw_materials_inventory.search_materials_by_crop(crop_name)
+    if found_materials:
+        print(f"Raw Materials for {crop_name.capitalize()}:")
+        for material in found_materials:
+            print(f"Region: {material.region}, Town: {material.town}, Crop Type: {material.crop_type}, Quantity: {material.quantity}")
+    else:
+        print(f"No raw materials found for {crop_name.capitalize()}.")
+
+# Sample usage
+display_raw_materials_by_crop()

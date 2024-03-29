@@ -1,12 +1,12 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 class RawMaterial:
-   def __init__(self, name, region, town, quantity, crop_type):
-     self.name = name
-     self.region = region
-     self.town = town
-     self.quantity = quantity
-     self.crop_type = crop_type
+    def __init__(self, name, region, town, quantity, crop_type):
+        self.name = name
+        self.region = region
+        self.town = town
+        self.quantity = quantity
+        self.crop_type = crop_type
 
 class RawMaterialInventory:
     def __init__(self):
@@ -42,6 +42,7 @@ raw_materials_inventory.add_material(RawMaterial("Soybeans", "Northern", "Tamale
 raw_materials_inventory.add_material(RawMaterial("Groundnut", "Northern", "Yendi", 400, "Legumes"))
 raw_materials_inventory.add_material(RawMaterial("Cassava", "Northern", "Bimbilla", 200, "Starchy Crops"))
 raw_materials_inventory.add_material(RawMaterial("Yam", "Northern", "Salaga", 600, "Starchy Crops"))
+
 # Savannah Region
 raw_materials_inventory.add_material(RawMaterial("Maize", "Savannah", "Damongo", 700, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Sorghum", "Savannah", "Sawla", 500, "Cereals"))
@@ -55,3 +56,53 @@ raw_materials_inventory.add_material(RawMaterial("Cashew", "North East", "Gambag
 # Upper East Region
 raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper East", "Bolgatanga", 800, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper East", "Navrongo", 600, "Legumes"))
+
+# Upper West Region
+raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper West", "Wa", 700, "Cereals"))
+raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper West", "Nadowli", 500, "Legumes"))
+
+# Oti Region
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Oti", "Jasikan", 1000, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Maize", "Oti", "Kadjebi", 800, "Cereals"))
+
+# Additional Regions and Raw Materials
+raw_materials_inventory.add_material(RawMaterial("Coconuts", "Western", "Takoradi", 200, "Fruits"))
+raw_materials_inventory.add_material(RawMaterial("Pineapples", "Western", "Sekondi", 150, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Ashanti", "Kumasi", 300, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Plantains", "Ashanti", "Obuasi", 400, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Eastern", "Koforidua", 250, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Oil Palm", "Eastern", "Akim Oda", 350, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Pineapples", "Greater Accra", "Accra", 500, "Fruits"))
+raw_materials_inventory.add_material(RawMaterial("Chillies", "Greater Accra", "Tema", 200, "Vegetables"))
+
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Bono", "Sunyani", 400, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Pineapples", "Bono", "Techiman", 300, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Plantains", "Bono East", "Techiman",
+
+250, "Fruits"))
+raw_materials_inventory.add_material(RawMaterial("Pineapples", "Bono East", "Kintampo", 150, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Ahafo", "Goaso", 200, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Cashew", "Ahafo", "Dormaa", 300, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Pineapples", "Central", "Cape Coast", 400, "Fruits"))
+raw_materials_inventory.add_material(RawMaterial("Coconuts", "Central", "Elmina", 250, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Volta", "Ho", 350, "Crops"))
+raw_materials_inventory.add_material(RawMaterial("Oil Palm", "Volta", "Keta", 200, "Fruits"))
+
+raw_materials_inventory.add_material(RawMaterial("Plantains", "Western North", "Sefwi Wiawso", 300, "Fruits"))
+raw_materials_inventory.add_material(RawMaterial("Cocoa", "Western North", "Sefwi Debiso", 200, "crop"))
+
+# Sample function to display all raw materials
+def display_all_raw_materials():
+    print("Raw Materials Inventory:")
+    for material in raw_materials_inventory.materials:
+        print(f"Region: {material.region}, Town: {material.town}, Crop Type: {material.crop_type}, Quantity: {material.quantity}")
+
+# Sample usage
+display_all_raw_materials()
