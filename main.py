@@ -35,7 +35,6 @@ class RawMaterialInventory:
 raw_materials_inventory = RawMaterialInventory()
 
 # Adding sample raw materials based on the provided information
-
 # Northern Region
 raw_materials_inventory.add_material(RawMaterial("Tomatoes", "Northern", "Tamale", 500, "Vegetables"))
 raw_materials_inventory.add_material(RawMaterial("Soybeans", "Northern", "Tamale", 300, "Legumes"))
