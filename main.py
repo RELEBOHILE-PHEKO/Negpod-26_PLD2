@@ -1,4 +1,13 @@
 #!/usr/bin/python3
+The error message indicates a syntax error, likely caused by an invalid syntax around line 108. It seems like there's an issue with the code structure or formatting.
+
+Given that the error message points to the beginning of a multi-line string (indicated by triple backticks ```), it suggests that there might be a mistake in how the code was copied or pasted.
+
+Ensure that you haven't inadvertently copied any non-code text, such as markdown code blocks (```), when integrating the provided code. Markdown code blocks are not valid Python syntax and should not be included in the Python script.
+
+Here's a corrected version of the code without any markdown code blocks:
+
+```python
 class RawMaterial:
     def __init__(self, name, region, town, quantity, crop_type):
         self.name = name
@@ -80,7 +89,7 @@ raw_materials_inventory.add_material(RawMaterial("Chillies", "Greater Accra", "T
 raw_materials_inventory.add_material(RawMaterial("Cocoa", "Bono", "Sunyani", 400, "Crops"))
 raw_materials_inventory.add_material(RawMaterial("Pineapples", "Bono", "Techiman", 300, "Fruits"))
 
-raw_materials_inventory.add_material(RawMaterial("Plantains", "Bono East", "Techiman", 
+raw_materials_inventory.add_material(RawMaterial("Plantains", "Bono East", "Techiman",
 
 250, "Fruits"))
 raw_materials_inventory.add_material(RawMaterial("Pineapples", "Bono East", "Kintampo", 150, "Fruits"))
@@ -105,6 +114,3 @@ def display_all_raw_materials():
 
 # Sample usage
 display_all_raw_materials()
-```
-
-Now, the code includes the additional regions and their corresponding raw materials along with the existing data. You can run the code to see the full inventory of raw materials.
