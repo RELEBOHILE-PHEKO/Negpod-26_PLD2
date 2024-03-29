@@ -106,4 +106,3 @@ def display_all_raw_materials():
 
 # Sample usage
 display_all_raw_materials()
-"""
