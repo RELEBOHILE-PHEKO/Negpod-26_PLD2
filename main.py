@@ -52,6 +52,6 @@ raw_materials_inventory.add_material(RawMaterial("Vegetables", "North East", "Na
 raw_materials_inventory.add_material(RawMaterial("Sesame", "North East", "Walewale", 150, "Crops"))
 raw_materials_inventory.add_material(RawMaterial("Cashew", "North East", "Gambaga", 300, "Fruits"))
 
-# Upper East Region
+# Upper East region
 raw_materials_inventory.add_material(RawMaterial("Cereals", "Upper East", "Bolgatanga", 800, "Cereals"))
 raw_materials_inventory.add_material(RawMaterial("Legumes", "Upper East", "Navrongo", 600, "Legumes"))
